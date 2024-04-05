@@ -1,0 +1,160 @@
+section.detail{
+    width: 1280px;
+    height: 100%;
+    min-width:768px;
+    margin: 0px auto;
+    margin-top: 100px;
+    /* title 마진 때문 */
+    overflow: hidden;
+}
+nav.breadcrumb{
+    width: 100%;
+    height: 30px;
+    margin: 30px 0px 60px 0px;
+}
+ul.breadcrumb_list{
+    width: 100%;
+    height: 100%;
+}
+ul.breadcrumb_list li{
+    width: auto;
+    height: 100%;
+    float: left;
+    margin-right: 50px;
+    font: normal 14px/30px "Noto Serif KR";
+    position: relative;
+}
+ul.breadcrumb_list li::before{
+    content: ">";
+    display: block;
+    /* background: rgb(255, 7, 7); */
+    position: absolute;
+    left: -30px;
+}
+ul.breadcrumb_list li:first-child::before{
+    display: none;
+}
+div.detail_info{
+    width: 100%;
+    height: 852px;
+    /* background: red; */
+}
+div.img_list{
+    width: 50%;
+    height: 614px;
+    float: left;
+}
+div.main_img{
+    width: 100%;
+    height: 420px;
+    background: #F8F8F8;
+}
+div.main_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+ul.list_img{
+    width: 100%;
+    height: 194px;
+}
+ul.list_img li{
+    width: 23.43%;
+    height: 150px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+ul.list_img li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+div.text_list{
+    width: 50%;
+    height: 614px;
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+}
+div.new{
+    width: 40px;
+    height: 20px;
+    background: #386FC1;
+    color: #fff;
+    font: normal 10px/20px "Noto Serif KR";
+    text-align: center;
+    margin-bottom: 16px;
+}
+p.text_category{
+    font: bold 14px/20px "Noto Serif KR";
+    margin-bottom: 16px;
+}
+p.text_20{
+    font: normal 20px/30px "Noto Serif KR";
+}
+p.text_description{
+    font: normal 14px/20px "Noto Sans KR";
+    margin: 16px 0 40px 0;
+}
+ul.text_detail_list{
+    width: 360px;
+    height: 160px;
+    /* background: salmon; */
+    margin-bottom: 60px;
+}
+ul.text_detail_list li:nth-child(odd){
+    width: 100px;
+    height: 40px;
+    /* background: red; */
+    font: normal 14px/20px "Noto Sans KR";
+    float: left;
+}
+ul.text_detail_list li:nth-child(even){
+    width: 260px;
+    height: 40px;
+    /* background: blue; */
+    font: lighter 14px/20px "Noto Sans KR";
+    float: left;
+}
+li.title{
+    font: bold 14px/20px "Noto Sans KR";
+}
+li.text{
+    font: normal 14px/20px "Noto Sans KR";
+}
+div.submit_box{
+    width: 56.25%;
+    height: 50px;
+    font: normal 16px/50px "Noto Sans KR";
+}
+input.cart{
+    width: 44.44%;
+    height: 50px;
+    background: #605757;
+    border: none;
+    color: #fff;
+    margin-right: 11.11%;
+}
+input.buy{
+    width: 44.44%;
+    height: 50px;
+    background: #fff;
+    border: solid 1px #605757;
+    box-sizing: border-box;
+    color: #605757;
+}
+
+@media screen and (max-width: 1280px){
+    section.detail{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+div.banner{
+    width: 1280px;
+    height: 500px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+div.banner_img{
+    width: 1000px;
+    height: 330px;
+    background:url('/public/images/banner03.jpg') no-repeat center center;
+    background-size:cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+div.banner p{
+    font: bold 30px/43px "Noto Serif KR";
+    color:#fff
+}
+
+@media screen and (max-width:1280px){
+    div.banner{
+        width: 100%;
+    }
+}
+@media screen and (max-width:980px){
+    div.banner p{
+        font: bold 26px/39px "Noto Serif KR";
+    }
+}

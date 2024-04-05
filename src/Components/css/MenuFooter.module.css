@@ -1,0 +1,53 @@
+div.footer_wrap{
+    width: 100%;
+    height: 320px;
+    background: #ebebeb;
+}
+footer{
+    width: 1280px;
+    height: 100%;
+    margin: 0px auto;
+    /* 마진 */
+    overflow:hidden;
+    position: relative;
+}
+div.logo{
+    width: 160px;
+    height: 100%;
+    float: left;
+    margin-right: 100px;
+}
+div.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+ul.info{
+    width: 500px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-between;
+    font: normal 14px/30px "Noto Serif KR";
+    margin-top:70px;
+}
+ul.info li span{
+    font-weight: bold;
+}
+div.license{
+    font: italic 14px/30px "Noto Serif KR";
+}
+ul.sns{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    font: normal 30px/30px "Noto Serif KR";
+    position: absolute;
+    right: 0;
+    bottom: 80px;
+}

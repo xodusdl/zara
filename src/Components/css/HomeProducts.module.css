@@ -1,0 +1,100 @@
+section.products{
+    width: 100%;
+    height: 680px;
+    min-width:768px;
+    /* title 마진 때문 */
+    overflow: hidden;
+}
+div.title{
+    margin: 42px 0;
+    font: bold 20px/30px "Noto Serif KR";
+    text-align: center
+}
+ul.menu{
+    width: 500px;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px auto;
+    font: normal 20px/30px "Noto Serif KR";
+    color: #999999;
+}
+ul.menu li.selected{
+    color: #000;
+    font-weight: bold;
+}
+ul.list{
+    width:1000px;
+    height: 370px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-top: 60px;
+}
+ul.list li{
+    width: 24%;
+    height: 100%;
+}
+div.list_img{
+    width: 100%;
+    height: 250px;
+    background: #F7F7F7;
+}
+div.list_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+div.list_text{
+    margin-top: 14px;
+    width: 100%;
+    height:106px;
+    position: relative;
+    top:0;
+    left: 0;
+}
+p.text{
+    font: normal 14px/20px "Noto Sans KR";
+    position: absolute;
+    top:40px;
+}
+p.price{
+    font: normal 16px/24px "Noto Sans KR";
+    position: absolute;
+    bottom: 8px;
+}
+P.cate{
+    font: bold 14px/20px "Noto Serif KR";
+    position: absolute;
+    top:20px;
+}
+
+
+@media screen and (max-width:1280px){
+    div.collection_box{
+        width: 69.06%;
+    }
+    div.box_img, ul.product_list{
+        width: 49.09%;
+    }
+    ul.product_list li{
+        width: 100%;
+    }
+}
+@media screen and (max-width:1000px){
+    ul.list{
+        width: 100%;
+    }
+}
+@media screen and (max-width:980px){
+    ul.product_list li:last-child{
+        font: normal 12px/18px "Noto Serif KR";
+    }
+    p.text{
+        font: normal 12px/20px "Noto Sans KR";
+    }
+}

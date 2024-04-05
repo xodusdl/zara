@@ -1,0 +1,66 @@
+section.new{
+    width: 100%;
+    height: 400px;
+    min-width:768px;
+    /* title 마진 때문 */
+    overflow: hidden;
+}
+div.title{
+    margin: 42px 0;
+    font: bold 20px/30px "Noto Serif KR";
+    text-align: center
+}
+ul.new_list{
+    width: 1080px;
+    height: 260px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-between;
+}
+ul.new_list li{
+    width: 170px;
+    height: 100%;
+}
+div.new_img{
+    width: 100%;
+    height: 176px;
+    background: #F7F7F7;
+}
+div.new_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+div.new_text{
+    width: 100%;
+    height: 74px;
+    margin-top: 10px;
+    position: relative;
+    top:0;
+    left: 0;
+}
+p.text{
+    font: normal 12px/17px "Noto Sans KR";
+}
+p.price{
+    font: normal 14px/20px "Noto Sans KR";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@media screen and (max-width:1280px){
+    ul.new_list{
+        width: 84.37%;
+    }
+    ul.new_list li{
+        width: 13.28%;
+    }
+}
+@media screen and (max-width:980px){
+    p.text:nth-child(2){
+        display: none;
+    }
+}
